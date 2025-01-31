@@ -1,0 +1,49 @@
+http:
+  routers:
+    orchestrator-service-router:
+      rule: "PathPrefix(`/orchestrator`)"
+      service: orchestrator-service
+      middlewares:
+        - strip-api-prefix
+    payment-service-router:
+      rule: "PathPrefix(`/payment`)"
+      service: payment-service
+      middlewares:
+        - strip-api-prefix
+    inventory-service-router:
+      rule: "PathPrefix(`/inventory`)"
+      service: inventory-service
+      middlewares:
+        - strip-api-prefix
+    shipping-service-router:
+      rule: "PathPrefix(`/shipping`)"
+      service: shipping-service
+      middlewares:
+        - strip-api-prefix
+
+  services:
+    orchestrator-service:
+      loadBalancer:
+        servers:
+          - url: "http://host.docker.internal:8001"
+    payment-service:
+      loadBalancer:
+        servers:
+          - url: "http://host.docker.internal:8002"
+    inventory-service:
+      loadBalancer:
+        servers:
+          - url: "http://host.docker.internal:8003"
+    shipping-service:
+      loadBalancer:
+        servers:
+          - url: "http://host.docker.internal:8004"
+
+  middlewares:
+    strip-api-prefix:
+      stripPrefix:
+        prefixes:
+          - "/orchestrator"
+          - "/payment"
+          - "/inventory"
+          - "/shipping"
