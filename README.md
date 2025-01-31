@@ -1,6 +1,6 @@
 ## Saga Experiment
 
-[![image][image]](https://github.com/wanafiq/saga-experiment/blob/main/saga-experiment.png?raw=true)
+[![image][image]](../saga-experiment.png?raw=true)
 
 ## Getting Started
 
