@@ -1,6 +1,6 @@
 ## Saga Experiment
 
-[![image][image]](saga-experiment.png)
+![image!](saga-experiment.png)
 
 ## Getting Started
 
