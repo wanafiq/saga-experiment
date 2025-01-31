@@ -1,0 +1,35 @@
+{
+  "generator-jhipster": {
+    "applicationType": "microservice",
+    "authenticationType": "oauth2",
+    "backendType": "Quarkus",
+    "baseName": "orchestratorservice",
+    "blueprints": [
+      {
+        "name": "generator-jhipster-quarkus",
+        "version": "3.4.0"
+      }
+    ],
+    "buildTool": "maven",
+    "cacheProvider": "no",
+    "clientFramework": "no",
+    "clientTestFrameworks": null,
+    "clientTheme": null,
+    "creationTimestamp": 1737511081391,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "enableHibernateCache": true,
+    "enableTranslation": true,
+    "entities": [],
+    "jhipsterVersion": "8.8.0",
+    "languages": ["en"],
+    "microfrontend": null,
+    "microfrontends": [],
+    "nativeLanguage": "en",
+    "packageName": "com.privasia.procurehere.orchestratorservice",
+    "prodDatabaseType": "postgresql",
+    "serverPort": "5000",
+    "skipClient": true,
+    "withAdminUi": null
+  }
+}
