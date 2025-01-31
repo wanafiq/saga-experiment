@@ -13,6 +13,9 @@ docker-compose up -d
 ### Run Application
 To run the application, cd into each folder, and just run `mvn`
 
+#### Traefik
+If you changed the application port, please update the traefik port mapping at `docker/traefik/conf/services.yaml`
+
 
 ### Failure simulation
 `POST http://127.0.0.1:8000/orchestrator/api/items`
